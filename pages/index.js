@@ -2,18 +2,18 @@ import { useState } from "react";
 import Head from "next/head";
 
 const initialProducts = [
-  { id: 1, name: "Luminous Foundation", price: 39.99, category: "face", image: "../luminous.jpg", rating: 4.5, badge: "Best Seller" },
-  { id: 2, name: "Velvet Matte Lipstick", price: 24.99, category: "lips", image: "../lipstick.jpg", rating: 4.8, badge: "New" },
-  { id: 3, name: "Smokey Eye Palette", price: 49.99, category: "eyes", image: "../eyeliner.jpg", rating: 4.7 },
-  { id: 4, name: "Precision Eyeliner", price: 19.99, category: "eyes", image: "../eyeliner.jpg", rating: 4.6 },
-  { id: 5, name: "Blush Duo", price: 29.99, category: "face", image: "../blush.jpg", rating: 4.4 },
-  { id: 6, name: "Hydrating Primer", price: 34.99, category: "face", image: "../hydrating.jpg", rating: 4.3 },
-  { id: 7, name: "Makeup Brush Set", price: 59.99, category: "tools", image: "../brush.jpg", rating: 4.9, badge: "Top Rated" },
-  { id: 8, name: "Glitter Eyeshadow", price: 22.99, category: "eyes", image: "../glitter.jpg", rating: 4.2 },
-  { id: 9, name: "Matte Liquid Lipstick", price: 26.99, category: "lips", image: "../lips.jpg", rating: 4.7 },
-  { id: 10, name: "Makeup Sponge Set", price: 18.99, category: "tools", image: "../brush.jpg", rating: 4.5 },
-  { id: 11, name: "Brow Pencil", price: 16.99, category: "eyes", image: "../pencil.jpg", rating: 4.6 },
-  { id: 12, name: "Setting Spray", price: 28.99, category: "face", image: "../spray.jpg", rating: 4.8 },
+  { id: 1, name: "Luminous Foundation", price: 39.99, category: "face", image: "/luminous.JPG", rating: 4.5, badge: "Best Seller" },
+  { id: 2, name: "Velvet Matte Lipstick", price: 24.99, category: "lips", image: "/lipstick.JPG", rating: 4.8, badge: "New" },
+  { id: 3, name: "Smokey Eye Palette", price: 49.99, category: "eyes", image: "/eyeliner.JPG", rating: 4.7 },
+  { id: 4, name: "Precision Eyeliner", price: 19.99, category: "eyes", image: "/eyeliner.JPG", rating: 4.6 },
+  { id: 5, name: "Blush Duo", price: 29.99, category: "face", image: "/blush.JPG", rating: 4.4 },
+  { id: 6, name: "Hydrating Primer", price: 34.99, category: "face", image: "/hydrating.JPG", rating: 4.3 },
+  { id: 7, name: "Makeup Brush Set", price: 59.99, category: "tools", image: "/brush.JPG", rating: 4.9, badge: "Top Rated" },
+  { id: 8, name: "Glitter Eyeshadow", price: 22.99, category: "eyes", image: "/glitter.JPG", rating: 4.2 },
+  { id: 9, name: "Matte Liquid Lipstick", price: 26.99, category: "lips", image: "/lips.JPG", rating: 4.7 },
+  { id: 10, name: "Makeup Sponge Set", price: 18.99, category: "tools", image: "/brush.JPG", rating: 4.5 },
+  { id: 11, name: "Brow Pencil", price: 16.99, category: "eyes", image: "/pencil.JPG", rating: 4.6 },
+  { id: 12, name: "Setting Spray", price: 28.99, category: "face", image: "/spray.JPG", rating: 4.8 },
 ];
 
 function generateStarRating(rating) {
@@ -304,7 +304,7 @@ export default function Home() {
     }
     .hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../makeup.jpg");
+        url("/Makeup.JPG");
         background-size: cover;
         background-position: center;
         color: white;
@@ -450,7 +450,7 @@ export default function Home() {
     }
     .promo {
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("/placeholder.svg?height=600&width=1200");
+        url("/placeholder.svg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -748,10 +748,10 @@ export default function Home() {
         <div className="container">
           <h2 className="section-title">Shop By Category</h2>
           <div className="categories">
-            <div className="category"><img src="../face.JPG" alt="Face Makeup" /><h3>Face</h3></div>
-            <div className="category"><img src="../eyes.JPG" alt="Eyes Makeup" /><h3>Eyes</h3></div>
-            <div className="category"><img src="../lips.JPG" alt="Lips Makeup" /><h3>Lips</h3></div>
-            <div className="category"><img src="../brushes.JPG" alt="Brushes and Tools" /><h3>Tools</h3></div>
+            <div className="category"><img src="/face.JPG" alt="Face Makeup" /><h3>Face</h3></div>
+            <div className="category"><img src="/eyes.JPG" alt="Eyes Makeup" /><h3>Eyes</h3></div>
+            <div className="category"><img src="/lips.JPG" alt="Lips Makeup" /><h3>Lips</h3></div>
+            <div className="category"><img src="/brushes.JPG" alt="Brushes and Tools" /><h3>Tools</h3></div>
           </div>
         </div>
       </section>
@@ -796,7 +796,7 @@ export default function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-image">
-              <img src="../Makeup.JPG" alt="About Glam Beauty" />
+              <img src="/Makeup.JPG" alt="About Glam Beauty" />
             </div>
             <div className="about-text">
               <h2>About Glam Beauty</h2>
